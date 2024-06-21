@@ -1,0 +1,20 @@
+-   API route
+-   Schema
+
+-   Config project system
+
+    -   Models
+    -   Routers
+        -   products
+            -   get
+            -   post
+            -   put
+            -   delete
+
+-   Exports const | class => exports.[obj]
+
+start
+
+-   npm init => enter all
+-   npm i express cors axios
+-   npm i --save-dev nodemon

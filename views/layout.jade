@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/stylesheets/jumbotron-narrow.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap")    
+    body(style="text-align: center; padding: 40px 0;background: #EBF0F5")
+      div.container.d-flex.align-item-center
+        div.header.clearfix
+          h3.text-muted VNPAY DEMO
+        block content
+        footer.footer
+          p(style="color: #404F5E;font-family: 'Nunito Sans', 'Helvetica Neue', sans-serif; font-size: 20px;margin: 0;") &copy; VNPAY #{new Date().getFullYear()}
