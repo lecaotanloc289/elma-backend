@@ -15,7 +15,7 @@ const cookieSession = require('cookie-session')
 // const error_handler = require('./helper/error-handler').default
 // import authJwt from './helper/jwt'
 const corsOptions = {
-    origin: 'https://admin-elma-ecommerce.000webhostapp.com/',
+    origin: '*',
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
 }
@@ -31,7 +31,7 @@ app.use('/public/uploads', express.static(__dirname + '/public/uploads'))
 // app.use(error_handler);
 
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'https://admin-elma-ecommerce.000webhostapp.com/') // Replace with your domain
+    res.setHeader('Access-Control-Allow-Origin', '*') // Replace with your domain
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
     next()
